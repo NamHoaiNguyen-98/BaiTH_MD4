@@ -18,16 +18,18 @@ public class ClassroomService implements IClassroomService {
 
     @Override
     public Optional<Classroom> findOne(Long id) {
-        return Optional.empty();
+        return classroomRepository.findById(id);
     }
 
     @Override
     public void save(Classroom classroom) {
+        classroomRepository.save(classroom);
 
     }
 
     @Override
     public void delete(Long id) {
+        classroomRepository.deleteById(id);
 
     }
 }

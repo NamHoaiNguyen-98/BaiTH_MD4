@@ -3,23 +3,16 @@ package com.example.thmd4.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "classroom")
-public class Classroom {
+@Table(name = "image")
+
+public class Image {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Long price;
 
-    public Long getPrice() {
-        return price;
-    }
 
-    public void setPrice(Long price) {
-        this.price = price;
-    }
-
-    public Classroom() {
+    public Image() {
     }
 
     public Long getId() {
@@ -38,3 +31,6 @@ public class Classroom {
         this.name = name;
     }
 }
+
+
+
